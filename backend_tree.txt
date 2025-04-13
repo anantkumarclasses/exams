@@ -1,0 +1,93 @@
+../backend/
+├── app
+│   ├── app.py
+│   ├── blueprints
+│   │   ├── admin
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   └── routes.cpython-312.pyc
+│   │   │   └── routes.py
+│   │   ├── auth
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   └── routes.cpython-312.pyc
+│   │   │   └── routes.py
+│   │   ├── chapters
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   └── routes.cpython-312.pyc
+│   │   │   └── routes.py
+│   │   ├── quizzes
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   └── routes.cpython-312.pyc
+│   │   │   └── routes.py
+│   │   ├── subjects
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   └── routes.cpython-312.pyc
+│   │   │   └── routes.py
+│   │   └── user
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-312.pyc
+│   │       │   └── routes.cpython-312.pyc
+│   │       └── routes.py
+│   ├── celery_app.py
+│   ├── config.py
+│   ├── extensions.py
+│   ├── __init__.py
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── app.cpython-312.pyc
+│   │   ├── celery_app.cpython-312.pyc
+│   │   ├── config.cpython-312.pyc
+│   │   ├── extensions.cpython-312.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   └── models.cpython-312.pyc
+│   ├── services
+│   │   ├── auth_service.py
+│   │   └── __pycache__
+│   │       └── auth_service.cpython-312.pyc
+│   ├── tasks
+│   │   ├── csv_export.py
+│   │   ├── __init__.py
+│   │   ├── monthly_reports.py
+│   │   ├── __pycache__
+│   │   │   ├── csv_export.cpython-312.pyc
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── monthly_reports.cpython-312.pyc
+│   │   │   ├── reminders.cpython-312.pyc
+│   │   │   └── scheduler.cpython-312.pyc
+│   │   ├── reminders.py
+│   │   └── scheduler.py
+│   └── utils
+│       ├── auth.py
+│       ├── exceptions.py
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── auth.cpython-312.pyc
+│       │   ├── exceptions.cpython-312.pyc
+│       │   ├── __init__.cpython-312.pyc
+│       │   └── token.cpython-312.pyc
+│       ├── token.py
+│       └── validators.py
+├── backend_tree.txt
+├── instance
+│   └── app.db
+├── migrations
+│   ├── alembic.ini
+│   ├── env.py
+│   ├── __pycache__
+│   │   └── env.cpython-312.pyc
+│   ├── README
+│   ├── script.py.mako
+│   └── versions
+└── requirements.txt
+
+26 directories, 65 files
