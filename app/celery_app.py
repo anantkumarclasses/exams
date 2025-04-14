@@ -2,18 +2,15 @@
 
 from celery import Celery
 import os
-from dotenv import load_dotenv
 
-# Load .env variables if needed
-load_dotenv()
-
-def make_celery(app_name='quiz_master'):
-    redis_url = os.getenv('REDIS_URL', 'redis://localhost:6379/0')
+def make_celery(app=None):
+    broker_url = os.getenv("CELERY_BROKER_URL")
+    result_backend = os.getenv("CELERY_RESULT_BACKEND")
 
     return Celery(
-        app_name,
-        broker=redis_url,
-        backend=redis_url,
+        app.import_name if app else __name__,
+        broker=broker_url,
+        backend=result_backend,
         include=[
             'app.tasks.reminders',
             'app.tasks.monthly_reports',
